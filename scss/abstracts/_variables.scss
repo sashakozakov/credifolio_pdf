@@ -4,12 +4,11 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
-  'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: #323232 !default;
 
 /// Main brand color
 /// @type Color
@@ -35,23 +34,23 @@ $max-width: 1170px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'sm': only screen and
+  "sm": only screen and
     (
       min-width: 768px
     ),
-  'md': only screen and
+  "md": only screen and
     (
       min-width: 1024px
     ),
-  'lg': only screen and
+  "lg": only screen and
     (
       min-width: 1280px
     ),
-  'xl': only screen and
+  "xl": only screen and
     (
       min-width: 1440px
     ),
-  'xxl': only screen and
+  "xxl": only screen and
     (
       min-width: 1920px
     )
@@ -61,4 +60,22 @@ $breakpoints: (
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$base-url: "/assets/" !default;
+
+$primary: #03a5e3;
+$light: #e5f6fc;
+$dark_blue: #154061;
+$dark: #143f60;
+
+$time: all 0.3s;
+
+$min_xlarge: 1201px;
+$min_medium: 768px;
+$min_small: 641px;
+$min_xsmall: 481px;
+
+$xlarge: 1200px;
+$large: 991px;
+$medium: 767px;
+$small: 640px;
+$xsmall: 480px;

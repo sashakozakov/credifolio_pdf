@@ -1,16 +1,19 @@
 @charset 'UTF-8';
 
+@import "bootstrap4/bootstrap.scss";
 // 1. Configuration and helpers
-@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
 
 // 2. Vendors
-@import 'vendor/normalize', 'vendor/wp-core';
+@import "vendor/normalize", "vendor/wp-core";
 
 // 3. Base stuff
-@import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
+@import "base/base", "base/fonts", "base/typography", "base/helpers";
+@import "vendor/slick";
 
 // 4. Layout-related sections
-@import 'layout/header', 'layout/footer';
+@import "layout/header", "layout/footer";
+@import "layout/home";
 
 // 5. Components
-@import 'components/button', 'components/hamburger';
+@import "components/button", "components/hamburger";

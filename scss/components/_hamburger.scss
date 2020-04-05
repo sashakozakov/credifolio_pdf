@@ -10,7 +10,7 @@
   outline: none;
   background-color: transparent;
   cursor: pointer;
-
+  display: none;
   span {
     position: relative;
     font-size: 0;
@@ -28,7 +28,7 @@
       height: 2px;
       display: block;
       background: #000;
-      content: '';
+      content: "";
       @include transition;
     }
 
@@ -41,7 +41,7 @@
     }
   }
 
-  @include when-inside('.page-header.is-opened') {
+  @include when-inside(".page-header.is-opened") {
     span {
       background-color: transparent;
 

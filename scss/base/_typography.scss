@@ -11,3 +11,59 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 56px;
+  @media (max-width: $xlarge) {
+    font-size: 52px;
+  }
+  @media (max-width: $large) {
+    font-size: 46px;
+  }
+  @media (max-width: $medium) {
+    font-size: 40px;
+  }
+  @media (max-width: $small) {
+    font-size: 36px;
+  }
+  @media (max-width: $xsmall) {
+    font-size: 30px;
+  }
+}
+h2 {
+  font-size: 42px;
+  @media (max-width: $large) {
+    font-size: 38px;
+  }
+  @media (max-width: $medium) {
+    font-size: 32px;
+  }
+  @media (max-width: $small) {
+    font-size: 28px;
+  }
+  @media (max-width: $xsmall) {
+    font-size: 24px;
+  }
+}
+h3 {
+  font-size: 30px;
+}
+h5 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

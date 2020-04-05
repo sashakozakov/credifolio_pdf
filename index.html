@@ -8,45 +8,267 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="format-detection" content="telephone=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.min.css" />
-
-  <!-- Responsive images polyfill -->
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement('picture');
-  </script>
-  <script src="js/picturefill.min.js" async></script>
   <!-- Responsive image polyfill end -->
 </head>
 
 <body>
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="" alt="" />
-    </a>
-    <button class="hamburger">
-      <span>Menu</span>
-    </button>
-    <nav class="page-header__nav">
-      <ul>
-        <li><a href="#"></a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container flex align-items-center">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.svg" alt="" />
+      </a>
+      <button class="hamburger">
+        <span>Menu</span>
+      </button>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Information</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main></main>
-  <footer class="page-footer">
-    <a href="index.html" class="page-footer__logo"> </a>
+
+  <section class="home_banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="home_banner--caption">
+            <h1>The free business credit score app</h1>
+            <p>
+              Get your credit score and understand your customers credit risk. Credifolio is the simple app that allows
+              you to get business credit scores, for free.
+            </p>
+            <div class="download_btns hide_for_min_medium">
+              <a href="#">
+                <img src="img/apple_btn.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/google_btn.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="img_block">
+            <img src="img/banner_device_1.png" alt="">
+            <div class="download_btns show_for_medium">
+              <a href="#">
+                <img src="img/apple_btn.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/google_btn.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features_section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_block--icon">
+              <img src="img/feature_1.svg" alt="">
+            </div>
+            <h5 class="feature_block--title">Free up to 5 reports</h5>
+            <p>
+              Get updated on 5 companies for free. No strings attached.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_block--icon">
+              <img src="img/feature_2.svg" alt="">
+            </div>
+            <h5 class="feature_block--title">Up to the minute notifications</h5>
+            <p>
+              We’ll provide instant updates on the companies you work with.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_block--icon">
+              <img src="img/feature_3.svg" alt="">
+            </div>
+            <h5 class="feature_block--title">Best in class data</h5>
+            <p>
+              We work with the leaders in financial data to get you the most accurate credit risk information.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_block--icon">
+              <img src="img/feature_4.svg" alt="">
+            </div>
+            <h5 class="feature_block--title">Fully online</h5>
+            <p>
+              Get setup in minutes with our intuitive and easy to use app.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_block--icon">
+              <img src="img/feature_5.svg" alt="">
+            </div>
+            <h5 class="feature_block--title">5 million UK companies covered</h5>
+            <p>
+              Full coverage of the UK market, with international support coming soon.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_block--icon">
+              <img src="img/feature_6.svg" alt="">
+            </div>
+            <h5 class="feature_block--title">Payment data</h5>
+            <p>
+              Our crowdsourced payment data feed will allow you to know when companies are paying late, a key factor in
+              determining financial distress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track_slider__section">
+    <div class="container">
+      <div class="caption">
+        <h3>
+          Track
+        </h3>
+        <p>
+          Add your customers to keep informed on their financial position.
+        </p>
+      </div>
+      <div class="track_slider">
+        <div class="track_slide">
+          <img src="img/slider_device_1.png" alt="">
+        </div>
+        <div class="track_slide">
+          <img src="img/slider_device_1.png" alt="">
+        </div>
+        <div class="track_slide">
+          <img src="img/slider_device_1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="simple_content_sect">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <div class="img_block">
+            <img src="img/simple_content_sect.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content_block">
+            <h2>Free, and completely online.</h2>
+            <p>
+              Credifolio is completely free to monitor and analyse up to 5 UK companies.
+            </p>
+            <p>
+              We’ll be announcing pricing for additional companies and international entities in the near future. No
+              pushy
+              salespeople included.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info_section">
+    <div class="container text-center">
+      <h2>
+        Download the app and get your credit score and understand your customers credit risk.
+      </h2>
+      <div class="download_btns">
+        <a href="#">
+          <img src="img/apple_btn.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="img/google_btn.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <a href="#" class="footer__logo">
+            <img src="img/footer_logo.svg" alt="">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <ul class="footer__socials">
+            <li>
+              <a href="#" target="_blank">
+                <svg width="29" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.78036 1.26741C4.985 4.82707 8.99081 6.82395 13.7978 7.08442C13.6197 3.43794 14.866 1.44105 17.7146 0.399201C19.4949 -0.208546 21.3643 -0.208546 22.8776 1.00695C23.9458 1.87516 24.747 1.78834 25.7262 1.44105C26.3493 1.18059 26.8834 0.920127 27.5065 0.746485L27.7736 1.00695C27.0614 1.87516 26.3493 2.83019 25.6372 3.6984C26.4383 3.52476 27.2395 3.35111 28.1297 3.17747L28.3077 3.35111C27.6846 3.95886 26.9724 4.56661 26.4383 5.26118C26.0822 5.69528 25.7262 6.30303 25.7262 6.82395C25.3701 14.7247 20.2071 21.0626 12.6405 22.6254C8.27867 23.4936 4.09482 22.8858 0 20.4548C3.29366 20.6285 5.9642 20.0207 8.4567 18.1107C5.87518 17.6766 4.00581 16.5479 3.11563 14.0301H5.34107C2.58152 12.9014 1.15723 11.0782 0.890179 8.29991C1.69134 8.47355 2.4925 8.64719 3.29366 8.90766C0.801161 5.60846 0.356072 3.26429 1.78036 1.26741Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.49108 7.15389C5.673 7.15389 7.03907 5.71192 7.0201 3.90946C7.00112 2.06906 5.673 0.665039 3.52902 0.665039C1.40402 0.665039 0 2.06906 0 3.90946C0 5.71192 1.3471 7.15389 3.45313 7.15389H3.49108ZM16.317 28.5178V18.0256C16.317 17.4564 16.3739 16.9061 16.5257 16.4887C16.981 15.3693 18.0056 14.2119 19.7322 14.2119C21.99 14.2119 22.9007 15.9385 22.9007 18.4619V28.5178H29.1429V17.741C29.1429 11.9731 26.0692 9.27889 21.952 9.27889C18.6803 9.27889 17.1892 11.0417 16.3575 12.3248L16.316 12.3899L16.317 9.71527H10.0748C10.0748 9.71527 10.1507 11.4798 10.0748 28.5178H16.317ZM6.62166 9.71527V28.5177H0.360492V9.71527H6.62166Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.5 0C18.4391 0 18.9323 0.015268 20.4789 0.0870275C22.021 0.15726 23.0745 0.403075 23.9982 0.761872C24.9656 1.12579 25.842 1.69633 26.5663 2.43372C27.3036 3.15802 27.8742 4.0344 28.2381 5.00179C28.5969 5.92398 28.8427 6.97899 28.913 8.52106C28.9832 10.0677 29 10.5624 29 14.5C29 18.4391 28.9847 18.9323 28.913 20.4789C28.8427 22.021 28.5969 23.0745 28.2381 23.9982C27.8742 24.9656 27.3036 25.842 26.5663 26.5663C25.842 27.3036 24.9656 27.8742 23.9982 28.2381C23.076 28.5969 22.021 28.8427 20.4789 28.913C18.9323 28.9832 18.4376 29 14.5 29C10.5609 29 10.0677 28.9847 8.52106 28.913C6.97899 28.8427 5.9255 28.5969 5.00179 28.2381C4.0344 27.8742 3.15802 27.3036 2.43372 26.5663C1.69633 25.842 1.12579 24.9656 0.761872 23.9982C0.403075 23.076 0.15726 22.021 0.0870275 20.4789C0.0167948 18.9323 0 18.4376 0 14.5C0 10.5609 0.015268 10.0677 0.0870275 8.52106C0.15726 6.97899 0.403075 5.9255 0.761872 5.00179C1.12579 4.03438 1.69633 3.15799 2.43372 2.43372C3.15799 1.69633 4.03438 1.12579 5.00179 0.761872C5.92398 0.403075 6.97899 0.15726 8.52106 0.0870275C10.0677 0.0167948 10.5624 0 14.5 0ZM14.5 2.61235C10.628 2.61235 10.17 2.62762 8.64015 2.69785C7.22633 2.76198 6.45988 2.9971 5.94841 3.19711C5.27203 3.45972 4.78804 3.77424 4.28114 4.28114C3.79977 4.74892 3.42935 5.31864 3.19711 5.94841C2.99863 6.45988 2.76198 7.22633 2.69785 8.64015C2.62762 10.17 2.61235 10.628 2.61235 14.5C2.61235 18.372 2.62762 18.83 2.69785 20.3599C2.76198 21.7737 2.9971 22.5401 3.19711 23.0516C3.45972 23.728 3.77424 24.212 4.28114 24.7189C4.78804 25.2258 5.27203 25.5403 5.94841 25.8029C6.45988 26.0014 7.22633 26.238 8.64015 26.3021C10.17 26.3724 10.628 26.3876 14.5 26.3876C18.372 26.3876 18.83 26.3724 20.3599 26.3021C21.7737 26.238 22.5401 26.0029 23.0516 25.8029C23.728 25.5403 24.212 25.2258 24.7189 24.7189C25.2258 24.212 25.5403 23.728 25.8029 23.0516C26.0014 22.5401 26.238 21.7737 26.3021 20.3599C26.3724 18.83 26.3876 18.372 26.3876 14.5C26.3876 10.628 26.3724 10.17 26.3021 8.64015C26.238 7.22633 26.0029 6.45988 25.8029 5.94841C25.5707 5.31864 25.2002 4.74892 24.7189 4.28114C24.2511 3.79977 23.6814 3.42935 23.0516 3.19711C22.5401 2.99863 21.7737 2.76198 20.3599 2.69785C18.83 2.62762 18.372 2.61235 14.5 2.61235ZM14.5 19.3338C17.1697 19.3338 19.3338 17.1697 19.3338 14.5C19.3338 11.8303 17.1697 9.66616 14.5 9.66616C11.8303 9.66616 9.66616 11.8303 9.66616 14.5C9.66616 17.1697 11.8303 19.3338 14.5 19.3338ZM14.5 7.05381C18.6124 7.05381 21.9462 10.3876 21.9462 14.5C21.9462 18.6124 18.6124 21.9462 14.5 21.9462C10.3876 21.9462 7.05381 18.6124 7.05381 14.5C7.05381 10.3876 10.3876 7.05381 14.5 7.05381ZM23.9814 6.75913C23.9814 7.72041 23.2021 8.49968 22.2409 8.49968C21.2796 8.49968 20.5003 7.72041 20.5003 6.75913C20.5003 5.79786 21.2796 5.01858 22.2409 5.01858C23.2021 5.01858 23.9814 5.79786 23.9814 6.75913Z" />
+                </svg>
+
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg width="18" height="33" viewBox="0 0 18 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.1669 12.3983H11.5241V8.58175C11.5241 6.97275 12.3123 5.4044 14.8398 5.4044H17.4053V0.397382C17.4053 0.397382 15.077 0 12.8509 0C8.20348 0 5.16597 2.81665 5.16597 7.91585V12.3983H0V18.2796H5.16597V32.4971H11.5241V18.2796H16.2649L17.1669 12.3983Z" />
+                </svg>
+
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>
-    window.jQuery ||
-      document.write(
-        '<script src="js/vendor/jquery-3.3.1.min.js"><\/script>'
-      );
-  </script>
-  <script src="js/libs.min.js"></script>
+
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/plugins/jquery.matchHeight-min.js"></script> -->
+  <script src="js/plugins/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
