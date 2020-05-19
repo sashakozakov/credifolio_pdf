@@ -21,10 +21,7 @@
   &.small_header {
     padding: 17px 0;
     @media (max-width: $medium) {
-      padding: 20px 0;
-    }
-    @media (max-width: $xsmall) {
-      padding-bottom: 10px;
+      padding: 20px 0 10px;
     }
     .header__logo {
       max-width: 200px;
@@ -35,9 +32,6 @@
   }
   .flex {
     justify-content: space-between;
-    @media (max-width: 575px) {
-      justify-content: center;
-    }
   }
   &__logo {
     max-width: 271px;
@@ -59,32 +53,44 @@
   }
   &__nav {
     padding-left: 10px;
-    @media (max-width: 575px) {
-      padding: 25px 0 0;
-      width: 100%;
-    }
-    @media (max-width: $xsmall) {
-      padding-top: 18px;
+    @media (max-width: $small) {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 280px;
+      width: 280px;
+      padding: 90px 20px 0;
+      background: #fff;
+      text-align: right;
+      box-shadow: 10px 0px 20px 0px #000;
+      transform: translateX(120%);
+      transition: $time;
+      @include when-inside(".header.is-opened") {
+        transform: translateX(0%);
+      }
     }
     ul {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-end;
       margin: 0;
       padding: 0;
       list-style: none;
-      @media (max-width: 575px) {
-        justify-content: center;
+      @media (min-width: $min_small) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
       }
       li {
         margin-left: 29px;
-        @media (max-width: 575px) {
-          margin: 0 8px;
+        @media (max-width: $small) {
+          margin: 0 0 15px;
         }
         a {
           font-size: 16px;
           font-weight: 600;
+          @media (max-width: $small) {
+            font-size: 20px;
+          }
           &:hover {
             text-decoration: none;
             color: $dark;

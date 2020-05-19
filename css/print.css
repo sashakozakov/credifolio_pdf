@@ -1,0 +1,19 @@
+@media print {
+  * {
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    box-sizing: border-box; }
+  body {
+    -webkit-print-color-adjust: exact !important; }
+  body {
+    margin: 0; }
+  html,
+  body {
+    width: 210mm;
+    height: 297mm; }
+  @page {
+    size: A4;
+    margin: 0 0 0 0; }
+  .page {
+    border: none; } }

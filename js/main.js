@@ -34,6 +34,7 @@ $(document).ready(() => {
 
   function bindEvents() {
     $('.hamburger').on('click', () => {
+      $(this).toggleClass('active');
       const $header = $('.header');
 
       if ($header.hasClass('is-opened')) {

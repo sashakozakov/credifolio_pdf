@@ -38,12 +38,12 @@ gulp.task('browserSync', () => {
 
 gulp.task('sass', () => {
   return gulp
-    .src('./scss/style.scss')
+    .src('./scss/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(rename('style.min.css'))
-    .pipe(sourcemaps.write())
+    // .pipe(postcss([autoprefixer(), cssnano()]))
+    // .pipe(rename('style.min.css'))
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 });
@@ -88,9 +88,9 @@ gulp.task('imagemin', () =>
             speed: 1,
             quality: 98 // lossy settings
           }),
-          imageminMozjpeg({
-            quality: 90
-          }))
+            imageminMozjpeg({
+              quality: 90
+            }))
         ],
         {
           verbose: true

@@ -10,7 +10,10 @@
   outline: none;
   background-color: transparent;
   cursor: pointer;
-  display: none;
+  outline: none !important;
+  @media (min-width: $min_small) {
+    display: none;
+  }
   span {
     position: relative;
     font-size: 0;
@@ -41,7 +44,7 @@
     }
   }
 
-  @include when-inside(".page-header.is-opened") {
+  @include when-inside(".header.is-opened") {
     span {
       background-color: transparent;
 
